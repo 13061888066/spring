@@ -19,4 +19,9 @@ public class UserService {
         List<User> users = userMapper.findAll();
         return users;
     }
+
+    public void updateUser(String trueName,Integer userId) {
+        userMapper.updateUser(trueName,userId);
+//        int i = 1/0;
+    }
 }
